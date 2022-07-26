@@ -2,6 +2,7 @@ import React from 'react';
 import "./Header.css";
 import Logo from '../../assets/logo.png';
 import Bars from '../../assets/bars.png';
+import { Link } from "react-scroll"; 
 
 export const Header = () => {
   const mobile = window.innerWidth<=768 ? true: false;
@@ -24,12 +25,67 @@ export const Header = () => {
           </div>
         ) : (
         <ul className='header-menu'>
-          <li onClick={()=>setMenuOpened(false)}>Accueil</li>
-          <li onClick={()=>setMenuOpened(false)}>Planning fitness</li>
-          <li onClick={()=>setMenuOpened(false)}>Réservation de cours</li>
-          <li onClick={()=>setMenuOpened(false)}>Musculation</li>
-          <li onClick={()=>setMenuOpened(false)}>Tarif</li>
-          <li onClick={()=>setMenuOpened(false)}>Contact</li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            activeClass="active"
+            to='header'
+            spy={true}
+            smooth={true}
+            > 
+            Accueil 
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='planning'
+            spy={true}
+            smooth={true}
+            > 
+            Planning fitness 
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='reservation'
+            spy={true}
+            smooth={true}
+            > 
+             Réservation de cours
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='musculation'
+            spy={true}
+            smooth={true}
+            > 
+           Musculation
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='tarif'
+            spy={true}
+            smooth={true}
+            > 
+            Tarif
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='contact'
+            spy={true}
+            smooth={true}
+            > 
+            Contact 
+            </Link>
+          </li>
         </ul>
         )}
     </div>
