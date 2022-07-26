@@ -78,6 +78,23 @@
   gap: 1rem;
 }
 
-.feature>img {
+.feature > img {
   width: 1rem;
+}
+
+.plans > :nth-child(1) > svg {
+  fill: white;
+}
+
+.plans > :nth-child(2) > button {
+  color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+  }
+  .plans > :nth-child(2) {
+    transform: none;
+  }
 }
