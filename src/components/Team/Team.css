@@ -1,0 +1,24 @@
+.team_container {
+  margin-bottom: 200px;
+  align-items: center;
+}
+
+.team_container .content {
+  text-align: center;
+}
+
+
+.team_container .box {
+  overflow: hidden;
+}
+
+.team_container img {
+  cursor: pointer;
+  height: 400px; 
+  width: 70% ; 
+  display: inline-block;
+}
+
+.team_container .box:hover img {
+  transform: scale(1.1) ;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Header.css";
 import Logo from '../../assets/logo.png';
 import Bars from '../../assets/bars.png';
@@ -69,11 +69,21 @@ export const Header = () => {
           <li >
             <Link
             onClick={()=>setMenuOpened(false)}
-            to='tarif'
+            to='plans'
             spy={true}
             smooth={true}
             > 
             Tarif
+            </Link>
+          </li>
+          <li >
+            <Link
+            onClick={()=>setMenuOpened(false)}
+            to='plans'
+            spy={true}
+            smooth={true}
+            > 
+            Team
             </Link>
           </li>
           <li >
