@@ -4,6 +4,7 @@ import Plans from './components/Plans/Plans';
 import Footer from './components/Footer/Footer';
 import Team from './components/Team/Team';
 import Contact from './components/Contact/Contact';
+import Fitness from './components/Fitness/Fitness';
 
 
 function App() {
@@ -11,9 +12,11 @@ function App() {
     <div className="App">
      <Hero />
      <Plans />
+     <Fitness />
      <Team />
      <Contact/> 
      <Footer />
+     
     </div>
   );
 }

@@ -39,7 +39,7 @@ export const Header = () => {
           <li >
             <Link
             onClick={()=>setMenuOpened(false)}
-            to='planning'
+            to='fitness'
             spy={true}
             smooth={true}
             > 
@@ -79,7 +79,7 @@ export const Header = () => {
           <li >
             <Link
             onClick={()=>setMenuOpened(false)}
-            to='plans'
+            to='team'
             spy={true}
             smooth={true}
             > 
