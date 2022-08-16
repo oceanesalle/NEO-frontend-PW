@@ -4,11 +4,10 @@ import './Hero.css';
 import hero_image from '../../assets/hero_image.png';
 import hero_image_back from '../../assets/hero_image_back.png';
 
-import {motion} from 'framer-motion'; 
+
 
 const Hero = () => {
-  const transition = {type: 'spring', duration : 3}
-  const mobile = window.innerWidth<=768 ? true: false;
+ 
 
   return (
     <div className="hero" id='hero'>
@@ -18,11 +17,7 @@ const Hero = () => {
         <Header />
        
        <div className="the-best-ad">
-        <motion.div
-        initial={{left: mobile? "178px":'238px'}}
-        whileInView={{left: '8px'}}
-        transition={{...transition, type: 'tween'}}
-        ></motion.div>
+        
         <div></div>
         <span>Club de sport situé à Cormery</span>
        </div>
